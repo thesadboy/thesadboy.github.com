@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/help.js"></script>
+<script type="text/javascript" src="js/help.js"></script>
+</head>
+<body><div id="header"></div>
+
+<div class="mainCount mid">
+
+  <div class="leftDiv" id="vs_left">
+    <div class="bigTitle">
+      <h1>Help</h1>
+    </div>
+    <div class="help_left">
+      <ul>
+        <a href="index.html">Preface</a> <a href="introduction.html" class="active" >Introduction</a> <a href="Resource_Management.html" >Resource Management</a> <a href="Content_Management.html" >Content Management</a> <a href="Category_Management.html" >Category Management</a> <a href="Product_Management.html" >Product Management</a> <a href="Subscriber_Management.html"  >Subscriber Management</a> <a href="Billing.html" >Billing</a>
+      </ul>
+    </div>
+  </div>
+  <div class="rightDiv ">
+    <div id="helpList" class="acontxt">
+      <h1>Introduction</h1>
+     <ul>
+       <br />
+
+          <h5>Back Office is a background management platform that can accomplish the management and billing function of video resource, film metadata, business product, subscribers and device authorization. Subscriber can upload video resource quickly and complete the file encoding, encryption, publishing automatically.</h5>
+       
+      </ul>
+      <ul>
+        <a class="nomal" href="####">1. Resource [Basic Concept]</a>
+        <dd>
+          <p>Resource is a video source file. Subscriber can upload from local directly, and the system can process and publish automatically. The resource that published successfully can be packaged to content.</p>
+        </dd>
+      </ul>
+      <ul>
+        <a class="nomal" href="####">2. Content [Basic Concept]</a>
+        <dd>
+          <p>Content is an entity defined in BO. Content contains three parts: content metadata, content resource, and device group.</p>
+<p>Content metadata is the description of the content, such as content name, content description, content poster, actor, director, content copyright information etc. Content resource means the video files which upload successfully and through pre-processing. Device group means the device set that content will be allowed to playback on. Content is used to identify media resource and helps searching and managing.</p>
+        </dd>
+      </ul>
+      <ul>
+        <a class="nomal"  href="#aaa">3. Product [Basic Concept]</a>
+        <dd>
+          <p>Product is a carrier that subscriber purchase content. Product is composed of content, region and rate, and classified via the number of content included. The following diagram depicts the structure of the product. </p>
+          <p><img src="images/01.png" /></p>
+<p>The system defines three types of the product: simple product, complex product and companion product. Simple product contains one content, and complex product contains one or more contents, companion product is a special complex product, and it's derived from complex product. The following table describes the relationship between product and companion product.
+          </p>
+          <p><table  border="0" cellspacing="1" cellpadding="0" class="tabsys" width="100%">
+  <tr class="ta_top">
+    <td>Product Attribution</td>
+    <td>The relationship between product and companion product</td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product ID</td>
+    <td >Difference</td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product Name</td>
+    <td >Same</a> </td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product Description</td>
+    <td >Same</td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product Content</td>
+    <td >Same</td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product Rate</td>
+    <td >Difference</td>
+  </tr>
+   <tr class="ta_tr">
+    <td >Product Region</td>
+    <td >Same</td>
+  </tr>
+  <tr class="ta_tr">
+    <td >Product On/Off Shelf Date</td>
+    <td >Same</td>
+  </tr>
+</table></p>
+        </dd>
+      </ul>
+      <ul>
+        <a class="nomal" href="####">4. Subscriber [Basic Concept]</a>
+        <dd>
+          <p>Subscriber can subscribe product and view media contents. Subscriber can sign up; log in using email address on Portal with the default setting. The default currency is EUR and the default payment type is prepaid. The administrator of BO can also create a subscriber, in which the email information, currency type, payment type are compulsory attributes. </p>
+        </dd>
+      </ul>
+      <ul>
+        <a class="nomal" href="####">5. Device [Basic Concept]</a>
+        <dd>
+          <p>Device is used to playback the content by subscriber, it can be mobile phone, STB or any other supported internet connected equipment. Subscriber can authorize device and only authorized device could playback the subscribed content.
+          </p>
+          <p class="tc">&nbsp;</p>
+        </dd>
+      </ul>
+      <ul>
+        <a class="nomal" href="####">6. Rate [Basic Concept]</a>
+        <dd>
+          <p>Rate is an attribute of the product to define the product price and valid period.</p>
+<p>System defined two types of rates: Per Purchase and Per Month. </p>
+<p><table  border="0" cellspacing="1" cellpadding="0" class="tabsys" width="100%">
+  <tr class="ta_top">
+    <td >Rate Type</td>
+    <td >Per Purchase</td>
+    <td >Per Month</td>
+  </tr>
+<tr class="ta_tr">    <td >Rate Name</td>
+    <td >√</td>
+    <td >√ </td>
+  </tr>
+<tr class="ta_tr">    <td >Expiry Hours</td>
+    <td >√ </td>
+    <td > </td>
+  </tr>
+<tr class="ta_tr">    <td >Subscriber Type</td>
+    <td >√  </td>
+    <td >√  </td>
+  </tr>
+<tr class="ta_tr">    <td >Currency Type</td>
+    <td >√  </td>
+    <td >√  </td>
+  </tr>
+<tr class="ta_tr">    <td >Auto Renewal</td>
+    <td > </td>
+    <td >√ </td>
+  </tr>
+</table></p>
+<p>From the list, Per Purchase supports Expiry Hours, and Per Month supports Auto Renewal.</p>
+        </dd>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
